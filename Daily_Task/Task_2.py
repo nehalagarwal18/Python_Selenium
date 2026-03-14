@@ -1,21 +1,17 @@
-'''Write a Selenium script to open a website and print the page title.
-'''
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+""" Task 2 : Using Name
+--> Open Facebook
+--> Enter email and password """
+
+from time import sleep
+from selenium.webdriver import Chrome,ChromeOptions
 from selenium.webdriver.common.by import By
-import time
-
-# Launch Chrome Browser
-driver = webdriver.Chrome()
-
-# Open Website
-driver.get("https://www.wikipedia.org")
-
-# Wait for page to load
-time.sleep(2)
-
-# Print Page Title
-print("Page Title is:", driver.title)
-
-# Close Browser
-driver.quit()
+o=ChromeOptions()
+o.add_experimental_option("detach",True)
+driver=Chrome(options=o)
+driver.get("https://www.facebook.com/")
+driver.maximize_window()
+sleep(2)
+driver.find_element(By.NAME,"email").send_keys("kritijain617@gmail.com")
+driver.find_element(By.NAME,"pass").send_keys("Kriti@3421")
+sleep(2)
+driver.close()
