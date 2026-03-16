@@ -27,6 +27,8 @@ driver.maximize_window() #return type is None
 driver.minimize_window() #return type is None
 #to set full screen
 driver.fullscreen_window() #return type is None
+we will not be using this
+while using this task bar and title bar will not ne shown
  """
 
 #To open amazon.com

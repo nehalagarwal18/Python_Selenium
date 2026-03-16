@@ -1,6 +1,7 @@
 # 1. ID locator
 #send_keys() and click() element method
-""" from time import sleep
+""" fastest, primarily and most priority
+from time import sleep
 from selenium.webdriver import Chrome,ChromeOptions
 from selenium.webdriver.common.by import By
 o=ChromeOptions()
@@ -9,10 +10,10 @@ driver=Chrome(options=o)
 driver.get("https://demoqa.com/text-box")
 driver.maximize_window()
 sleep(1)
-driver.find_element(By.ID,"userName").send_keys("Kriti Jain")
-driver.find_element(By.ID,"userEmail").send_keys("kritijain617@gmail.com")
+driver.find_element(By.ID,"userName").send_keys("Nehal Agarwal")
+driver.find_element(By.ID,"userEmail").send_keys("nehala1801@gmail.com")
 driver.find_element(By.ID,"currentAddress").send_keys("JECRC university, Jaipur")
-driver.find_element(By.ID,"permanentAddress").send_keys("Kishangarh, Ajmer")
+driver.find_element(By.ID,"permanentAddress").send_keys("Ajmer")
 driver.find_element(By.ID,"submit").click()
 sleep(2)
 driver.close() """
@@ -73,8 +74,8 @@ driver=Chrome(options=o)
 driver.get("https://demoqa.com/text-box")
 driver.maximize_window()
 sleep(1)
-driver.find_element(By.TAG_NAME,"input").send_keys("Kriti Jain") # enters the value in first input tag
-driver.find_element(By.TAG_NAME,"input").send_keys("kritijain617@gmail.com") # enters the value in the first input tag only
+driver.find_element(By.TAG_NAME,"input").send_keys("NehalAgarwal") # enters the value in first input tag
+driver.find_element(By.TAG_NAME,"input").send_keys("nehala1801@gmail.com") # enters the value in the first input tag only
 driver.find_element(By.TAG_NAME,"textarea").send_keys("Jaipur")# enters the value in first textarea
 sleep(2)
 driver.close() """
