@@ -1,7 +1,7 @@
 """
 # Locators - Locators are used to locate the element on the page and perform actions on it.
 
-There are two mwthods to find the elements:
+There are two methods to find the elements:
 find_element(locator-name,locator-value)
   -> it takes two arguments, this is for single element
   -> Returns a single Web Element object

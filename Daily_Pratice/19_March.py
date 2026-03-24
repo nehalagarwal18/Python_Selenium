@@ -31,7 +31,7 @@ for l in links:
 from selenium.webdriver.common.by import By
 o = ChromeOptions()
 o.add_experimental_option("detach",True)
-o.add_argument("--headless")
+o.add_argument("--headless")                           
 driver = Chrome(options=o)
 driver.get("https://www.google.com/")
 driver.maximize_window()

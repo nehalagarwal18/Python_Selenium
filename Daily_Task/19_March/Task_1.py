@@ -24,3 +24,18 @@ print("6th product name is: ", links[5].text)
 # fetching the 6th product by clicking on link
 links[5].click()
 driver.quit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
