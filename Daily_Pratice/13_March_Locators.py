@@ -48,7 +48,7 @@ When multiple elements have same class it will take the first element
 TAG NAME
 # driver.find_element(By.TAG_NAME, "input").send_keys("helloo")
 multiple value has same tag name so it gives value to first element having provided tag name
-tag name is least used locator
+tag-name is least used locator
 
 
 NAME
@@ -72,7 +72,7 @@ driver.get("https://amazon.in/")
 NOTE: id , name , classname and tag name are direct locator whereas link text and  partial link text are text based locators ,and CSS selectors and XPATH are expression based locators
 
 
-PARTIAL LINK TEXTfor long text it is used
+PARTIAL LINK TEXT - for long text it is used
 instead of using entire text we can give a part of it
 HERE we have freedom of choosing from start or from end or from between
 # driver.get("https://amazon.in/")
@@ -80,18 +80,18 @@ HERE we have freedom of choosing from start or from end or from between
 # driver.find_element(By.PARTIAL_LINK_TEXT, "Mob").click()
 
 
-CSS SElECTORS - tagname[attribute = "value]
+CSS SElECTORS - tag-name[attribute = "value]
 # driver.get("https://amazon.in/")
 # sleep(2)
 # driver.find_element(By.CSS_SELECTOR,'input[placeholder="Search Amazon.in"]').send_keys("shirt")
 
 # Another syntax for CSS SELECTORS -> "#" for ID and "." for CLASSNAME
 # driver.get("https://demoqa.com/text-box")
-# driver.find_element(By.CSS_SELECTOR, "input#userName").send_keys("hahahaha")
+# driver.find_element(By.CSS_SELECTOR, "input#userName").send_keys("happy")
 
 syntax is tag_name[attribute ='value ]
 ctrl+f in inspect paste tag_name[attribute ='value ] this and check if any area is highlighted if yes then it is present
-as expressions are used carefully so it is a way to verify if it is correct or not
+as expressions are used carefully so it is a way to verify if it is correct or not.
 
 We can also provide tag_name[id ="username]=#username  or tag_name#username
 for id only # is used
@@ -238,7 +238,7 @@ driver.close()
 """
 
 # 5. LINK_TEXT locator(works for only anchor tags)
-#It is case sensitive and space sensitive
+#It is case-sensitive and space sensitive
 #it is used to locate the element by its unique link text, used only for anchor tags
 """ from time import sleep
 from selenium.webdriver import Chrome,ChromeOptions
